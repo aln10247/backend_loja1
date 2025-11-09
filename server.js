@@ -25,4 +25,8 @@ app.post("/produtos", (req, res) => {
   res.json({ message: "Produto adicionado!" });
 });
 
+app.get('/', (req, res) => {
+  res.send('Servidor backend_loja1 está funcionando!');
+});
+
 app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
